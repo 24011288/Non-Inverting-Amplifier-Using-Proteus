@@ -11,14 +11,16 @@ To design and simulate a Non-Inverting Amplifier using μA741 in Proteus Design 
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
-<img width="905" height="668" alt="Screenshot 2026-01-23 093750" src="https://github.com/user-attachments/assets/79f2dbcf-4353-4c11-af82-242c947455d4" />
-
+(Draw neatly in record OR paste Proteus circuit screenshot)
 Pin Configuration:
 •	Pin 3 → Input (Non-inverting)
 •	Pin 2 → Feedback network
 •	Pin 6 → Output
 •	Pin 7 → +15V
 •	Pin 4 → −15V
+
+<img width="905" height="668" alt="Screenshot 2026-01-23 093750" src="https://github.com/user-attachments/assets/dc2eb8cd-4391-4669-bc7c-9576eb8fe31b" />
+
 ## Theory
 A Non-Inverting Amplifier is a closed-loop amplifier configuration in which the input is applied to the non-inverting terminal (+) of the op-amp.
 The output signal is amplified and remains in phase with the input signal.
@@ -32,16 +34,17 @@ The output signal is amplified and remains in phase with the input signal.
 7.	Run simulation.
 8.	Observe input and output waveforms.
 ## Waveform
-<img width="1916" height="1143" alt="Screenshot 2026-01-23 093720" src="https://github.com/user-attachments/assets/2baad210-6600-4504-90c0-b5bb0cef2ff2" />
+
+<img width="1916" height="1143" alt="Screenshot 2026-01-23 093720" src="https://github.com/user-attachments/assets/24fc634d-966f-421d-80b7-e78e27c76232" />
 
 ## Tabulation
 | S.No | Vin (V) | Theoretical Gain | Theoretical Vout (V) | Practical Vout (V) |
 | ---- | ------- | ---------------- | -------------------- | ------------------ |
-| 1    | 0.1     | 11               | 1.1                  |  1.08             |
-| 2    | 0.2     | 11               | 2.2                  |  2.15             |
-| 3    | 0.3     | 11               | 3.3                  |  3.25             |
-| 4    | 0.4     | 11               | 4.4                  |  4.35             |
-| 5    | 0.5     | 11               | 5.5                  |  5.40             |
+| 1    | 0.1     | 11               | 1.1                  | ≈ 1.08             |
+| 2    | 0.2     | 11               | 2.2                  | ≈ 2.15             |
+| 3    | 0.3     | 11               | 3.3                  | ≈ 3.25             |
+| 4    | 0.4     | 11               | 4.4                  | ≈ 4.35             |
+| 5    | 0.5     | 11               | 5.5                  | ≈ 5.40             |
 
 ## Result
 The Non-Inverting Amplifier using μA741 Op-Amp was designed and simulated successfully.
@@ -57,10 +60,10 @@ The output waveform is in phase with the input waveform.
 3.	Why is output in phase?
 4.	What happens if Rf increases?
 5.	What is the input impedance of non-inverting amplifier?
+
 ## Answer
 1.  A non-inverting amplifier is an op-amp configuration where the input signal is applied to the non-inverting (+) terminal, and the output is fed back to the inverting (−) terminal through a resistor. The output voltage is amplified and in phase with the input.
 2.  Av=1+(Rf/R1)
 3.  The input is applied to the non-inverting terminal (+). Since there is no phase reversal in this configuration, the output follows the same polarity as the input. Therefore, the output is in phase (0° phase shift) with the input.
 4. ​If increases, the gain increases. Therefore, the output voltage increases for the same input voltage.
 5. The input impedance is very high (ideally infinite). Practically, it is in the megaohms range because the input is connected directly to the op-amp input terminal.
-
